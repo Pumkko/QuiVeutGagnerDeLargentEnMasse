@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
 @font-face {
     font-family: pressStart2PRegular;
     src: url(assets/fonts/PressStart2P-Regular.ttf);
