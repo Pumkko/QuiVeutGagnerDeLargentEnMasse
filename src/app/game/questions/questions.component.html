@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Qui veut gagner de l'argent en Masse</h1>
+
+
+    <p class="questionTitre">{{question}}</p>
+
+    <div *ngFor="let reponse of reponsesPossibles; let index = index" class="reponse-list">
+      <span>
+        <input type="radio" [value]="index" name="radioReponse" (change)="onReponseSelected(index)"/>
+        <label>{{reponse}}</label>
+      </span>
+    </div>
+    <app-submit-response-button></app-submit-response-button>
+
+    <label class="nextQuestionLabel" [hidden]="!rightAnswerFound">Prochaine question dans : {{timeToWaitInSecond}}s</label>
+</div>

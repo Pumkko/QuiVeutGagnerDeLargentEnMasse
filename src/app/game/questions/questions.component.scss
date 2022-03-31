@@ -1,0 +1,31 @@
+
+h1 {
+    font-size: 500%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+
+.reponse-list {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.questionTitre {
+    font-size: xx-large;
+}
+
+label {
+    font-size: x-large;
+}
+
+.nextQuestionLabel {
+    margin-top: 10px;
+    font-family: eaterRegular;
+}

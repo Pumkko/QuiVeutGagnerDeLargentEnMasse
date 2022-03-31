@@ -1,0 +1,7 @@
+<div class="container">
+    <button (click)="clicked()" class="bouton" [ngClass]="{'shake-horizontal': wrongAnswerAnimation, 'ping': rightAnswerAnimation}">Ultime
+        bafouille
+    </button>
+
+    <label [hidden]="!goodAnswerFound" class="roll-in-left">Bonne réponse !</label>
+</div>
