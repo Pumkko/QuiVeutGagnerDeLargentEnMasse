@@ -12,6 +12,16 @@ module.exports = function (config) {
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
+	browsers: [
+	  'ChromeDebugging'
+	],
+
+	customLaunchers: {
+	  ChromeDebugging: {
+		base: 'Chrome',
+		flags: [ '--remote-debugging-port=9333' ]
+	  }
+	},
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here

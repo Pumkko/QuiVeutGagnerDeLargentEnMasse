@@ -12,5 +12,17 @@
             "sourceMaps": true,
             "webRoot": "${workspaceFolder}"
         },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach Karma Chrome",
+            "address": "localhost",
+            "port": 9333,
+            "sourceMaps": true,
+            "pathMapping": {
+                "/": "${workspaceRoot}/",
+                "/base/": "${workspaceRoot}/"
+            }
+        }
     ]
 }

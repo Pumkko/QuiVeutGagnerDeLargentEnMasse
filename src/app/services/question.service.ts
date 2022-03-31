@@ -6,14 +6,17 @@ import { QuestionProviderService } from "./question.provider.service";
     providedIn: 'any'
 })
 export class QuestionService {
-
-
+    
+    
     private currentIndex = -1;
+    
+    private questions: Question[] = [];
+    
+    constructor(private readonly questionProviderService: QuestionProviderService) {
+    }
 
-    private questions: Question[];
-
-    constructor(questionProviderService: QuestionProviderService) {
-        this.questions = questionProviderService.getQuestions();
+    loadQuestions() {
+        this.questions = this.questionProviderService.getQuestions();
     }
 
 

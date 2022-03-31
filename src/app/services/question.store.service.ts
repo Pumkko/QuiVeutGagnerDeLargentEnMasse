@@ -18,7 +18,9 @@ export class QuestionStoreService {
 
     private currentQuestion?: Question;
 
-    constructor(private readonly questionService: QuestionService, private readonly router: Router) { }
+    constructor(private readonly questionService: QuestionService, private readonly router: Router) {
+        this.questionService.loadQuestions();
+     }
 
     dispatchResponseStatus(status: boolean): void {
         this.responseStatusSubject.next(status);
